@@ -1,4 +1,4 @@
-// initial position of player
+var gameStatus = "play";
 var playerX = 800;
 var playerY = 300;
 var dirX=0;
@@ -18,7 +18,9 @@ for (let i=0; i< 25; i++) {
     }
 }
 
-// column base
+
+
+// Map of points not accesstble by player - column base
 cGrid[13][4]=1;
 cGrid[11][4]=1;
 cGrid[12][4]=1;
@@ -29,6 +31,7 @@ cGrid[13][6]=1;
 cGrid[11][6]=1;
 cGrid[12][6]=1;
 
+// Map of points not accesstble by player - general
 cGrid[ 0][0]=1;
 cGrid[ 0][1]=1;
 cGrid[ 0][2]=1;
