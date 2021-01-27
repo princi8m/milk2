@@ -4,13 +4,17 @@ var playerY = 300;
 
 var agent1X = 0;
 var agent1Y = 0
-var statusAgent1 = {x:100, y:150};
+var statusAgent1 = {x:100, y:150, directionX:2, directionY: 1};
+
 
 var agent2X = 900;
 var agent2Y = 150;
+var statusAgent2 = {x:850, y:250, directionX:3, directionY: -1};
+
 
 var agent3X = 600;
 var agent3Y = 400;
+var statusAgent3 = {x:600, y:400, directionX:2, directionY: -0.5};
 
 var tourist1X = 220;
 var tourist1Y = 220;
@@ -97,6 +101,7 @@ cGrid[2][11]=1;
 
 cGrid[ 3][0]=1;
 cGrid[ 3][1]=1;
+cGrid[ 3][9]=1;
 cGrid[ 3][10]=1;
 cGrid[ 3][11]=1;
 

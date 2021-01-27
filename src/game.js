@@ -91,8 +91,7 @@ function checkSquare(){
 
           for (let z = 0; z<12; z++){
            text(cGrid[i][z],(i*50), 50+(z*50));
-          checkSquare();
-          
+          checkSquare();   
           }
         }
 }
@@ -100,17 +99,78 @@ function checkSquare(){
 
 function agent1()
 {
+  statusAgent1.x=statusAgent1.x+statusAgent1.directionX;
+  if (statusAgent1.x>470) {
+    statusAgent1.x = statusAgent1.x - statusAgent1.directionX;
+    statusAgent1.directionX = statusAgent1.directionX * -1;
+    }
+
+  if (statusAgent1.x<100) {
+    statusAgent1.x=statusAgent1.x - statusAgent1.directionX;
+    statusAgent1.directionX = statusAgent1.directionX * -1;
+    }
+
+  statusAgent1.y=statusAgent1.y+statusAgent1.directionY;
+  if (statusAgent1.y>280) {
+        statusAgent1.y = statusAgent1.y - statusAgent1.directionY;
+        statusAgent1.directionY = statusAgent1.directionY * -1 ;
+      }
+  if (statusAgent1.y<100) {
+        statusAgent1.y = statusAgent1.y - statusAgent1.directionY;
+        statusAgent1.directionY = statusAgent1.directionY * -1 ;
+      }
   image(img_agent1, statusAgent1.x, statusAgent1.y);
 }
 
 function agent2()
 {
-  image(img_agent2, agent2X, agent2Y);
+  statusAgent2.x=statusAgent2.x+statusAgent2.directionX;
+  if (statusAgent2.x>1000) {
+    statusAgent2.x = statusAgent2.x - statusAgent2.directionX;
+    statusAgent2.directionX = statusAgent2.directionX * -1;
+    }
+
+  if (statusAgent2.x<700) {
+    statusAgent2.x=statusAgent2.x - statusAgent2.directionX;
+    statusAgent2.directionX = statusAgent2.directionX * -1;
+    }
+
+  statusAgent2.y=statusAgent2.y+statusAgent2.directionY;
+  if (statusAgent2.y>300) {
+        statusAgent2.y = statusAgent2.y - statusAgent2.directionY;
+        statusAgent2.directionY = statusAgent2.directionY * -1 ;
+      }
+  if (statusAgent2.y<50) {
+        statusAgent2.y = statusAgent2.y - statusAgent2.directionY;
+        statusAgent2.directionY = statusAgent2.directionY * -1 ;
+      }
+  image(img_agent2, statusAgent2.x, statusAgent2.y);
 }
 
 function agent3()
 {
-  image(img_agent3, agent3X, agent3Y);
+  statusAgent3.x=statusAgent3.x+statusAgent3.directionX;
+  if (statusAgent3.x>1000) {
+    statusAgent3.x = statusAgent3.x - statusAgent3.directionX;
+    statusAgent3.directionX = statusAgent3.directionX * -1;
+    }
+
+  if (statusAgent3.x<100) {
+    statusAgent3.x=statusAgent3.x - statusAgent3.directionX;
+    statusAgent3.directionX = statusAgent3.directionX * -1;
+    }
+
+  statusAgent3.y=statusAgent3.y+statusAgent3.directionY;
+
+  if (statusAgent3.y>400) {
+        statusAgent3.y = statusAgent3.y - statusAgent3.directionY;
+        statusAgent3.directionY = statusAgent3.directionY * -1 ;
+      }
+  if (statusAgent3.y<300) {
+       statusAgent3.y = statusAgent3.y - statusAgent3.directionY;
+      statusAgent3.directionY = statusAgent3.directionY * -1 ;
+    }
+  image(img_agent3, statusAgent3.x, statusAgent3.y);
 }
 
 function tourist1()

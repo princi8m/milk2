@@ -1,8 +1,6 @@
 
 let steps1;
 
-
-
 function setup ()
 {   
     bg = loadImage('../Assets/piazza2.jpg');
@@ -31,10 +29,8 @@ function setup ()
     img_tourist5 = loadImage('../Assets/tourist5.png');
     img_tourist6 = loadImage('../Assets/tourist6.png');
     img_tourist7 = loadImage('../Assets/tourist7.png');
-   
-    
+
     steps1 = loadSound('/Assets/steps2.mp3');
-   
 }
 
 function draw () {
@@ -51,7 +47,7 @@ function draw () {
         image(img_obelisk, 567, 80);
         
        
-    //drawGrid();
+   // drawGrid();
             } 
     else if (gameStatus=="start1") {
         background(img_intro1);  
@@ -63,7 +59,6 @@ function draw () {
         background(img_intro3);  
          }   
 }
-
 
 
 function player ()
@@ -81,4 +76,3 @@ function mouseClicked()
         else if (gameStatus=="start3") {gameStatus="play"}
       
 }
-
