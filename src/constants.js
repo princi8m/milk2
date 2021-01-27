@@ -1,6 +1,26 @@
-var gameStatus = "play";
+var gameStatus = "start1";
 var playerX = 800;
 var playerY = 300;
+
+var agent1X = 0;
+var agent1Y = 0
+var statusAgent1 = {x:100, y:150};
+
+var agent2X = 900;
+var agent2Y = 150;
+
+var agent3X = 600;
+var agent3Y = 400;
+
+var tourist1X = 220;
+var tourist1Y = 220;
+
+var tourist2X = 420;
+var tourist2Y = 120;
+
+var tourist3X = 900;
+var tourist3Y = 420;
+
 var dirX=0;
 var dirY=0;
 var dir_player=2;

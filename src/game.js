@@ -92,6 +92,38 @@ function checkSquare(){
           for (let z = 0; z<12; z++){
            text(cGrid[i][z],(i*50), 50+(z*50));
           checkSquare();
+          
           }
         }
+}
+
+
+function agent1()
+{
+  image(img_agent1, statusAgent1.x, statusAgent1.y);
+}
+
+function agent2()
+{
+  image(img_agent2, agent2X, agent2Y);
+}
+
+function agent3()
+{
+  image(img_agent3, agent3X, agent3Y);
+}
+
+function tourist1()
+{
+  image(img_tourist1, tourist1X, tourist1Y);
+}
+
+function tourist2()
+{
+  image(img_tourist2, tourist2X, tourist2Y);
+}
+
+function tourist3()
+{
+  image(img_tourist3, tourist3X, tourist3Y);
 }
