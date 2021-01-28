@@ -79,7 +79,7 @@ function draw () {
         image(img_points, 300, 550);
         textSize(32);
         textFont('Georgia');
-        text("TRIES: "+gameLives+"       MILKED: "+milked, 430, 592);
+        text("TRIES: "+gameLives+"       MILKED: "+milked+" / XII", 430, 592);
          
    // drawGrid();
             } 
