@@ -5,7 +5,7 @@ function setup ()
 {   
     bg = loadImage('../Assets/piazza2.jpg');
     createCanvas(1200, 600);
-    img_agent1 = loadImage('../Assets/police1.png');
+    img_agent1 = loadImage('https://princi8m.github.io/milk2/Assets/police1.png');
     img_agent2 = loadImage('../Assets/police2.png');
     img_agent3 = loadImage('../Assets/police3.png');
     img_agent4 = loadImage('../Assets/police4.png');
@@ -35,8 +35,8 @@ function setup ()
     img_tourist6 = loadImage('../Assets/tourist6.png');
     img_tourist7 = loadImage('../Assets/tourist7.png');
 
-    steps1 = loadSound('/Assets/steps2.mp3');
-    audio_cash = loadSound('/Assets/cash_sound_effect.mp3');
+    steps1 = loadSound('../Assets/steps2.mp3');
+    audio_cash = loadSound('../Assets/audio_cash2.mp3');
 }  
 
 function draw () {
@@ -185,7 +185,7 @@ function milkedPlus(actT)
           break;
         case 7:
           statusTourist7.active=0;
-            
+          break;
             
       }
       addTourist();
@@ -197,14 +197,18 @@ function addTourist()
           case 1:
           statusTourist4.active=1;
           break;
+
           case 2:
           statusTourist5.active=1;
           break;
+
           case 3:
           statusTourist6.active=1;
+          break;
+
           case 4:
           statusTourist7.active=1;
-        break;
+          break;
        
       }
 }
