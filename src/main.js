@@ -3,40 +3,40 @@ let steps1;
 
 function setup ()
 {   
-    bg = loadImage('../Assets/piazza2.jpg');
+    bg = loadImage('Assets/piazza2.jpg');
     createCanvas(1200, 600);
-    img_agent1 = loadImage('../Assets/police1.png');
-    img_agent2 = loadImage('../Assets/police2.png');
-    img_agent3 = loadImage('../Assets/police3.png');
-    img_agent4 = loadImage('../Assets/police4.png');
-    img_title =  loadImage('../Assets/img_title.jpg');
-    img_intro1 = loadImage('../Assets/intro_screen1.jpg');
-    img_intro2 = loadImage('../Assets/intro_screen2.jpg');
-    img_2lives = loadImage('../Assets/caught_police_1.jpg');
-    img_1lives = loadImage('../Assets/caught_police_2.jpg');
-    img_0lives = loadImage('../Assets/caught_police_3.jpg');
+    img_agent1 = loadImage('Assets/police1.png');
+    img_agent2 = loadImage('Assets/police2.png');
+    img_agent3 = loadImage('Assets/police3.png');
+    img_agent4 = loadImage('Assets/police4.png');
+    img_title =  loadImage('Assets/img_title.jpg');
+    img_intro1 = loadImage('Assets/intro_screen1.jpg');
+    img_intro2 = loadImage('Assets/intro_screen2.jpg');
+    img_2lives = loadImage('Assets/caught_police_1.jpg');
+    img_1lives = loadImage('Assets/caught_police_2.jpg');
+    img_0lives = loadImage('Assets/caught_police_3.jpg');
 
-    img_points = loadImage('../Assets/points_sign.png');
-    img_obelisk =loadImage('../Assets/obelisk.png');
-    img_player = loadImage('../Assets/roman1-down.png');
-    img_player[1] = loadImage('../Assets/roman1-up.png');
-    img_player[3] = loadImage('../Assets/roman1-right.png');
-    img_player[7] = loadImage('../Assets/roman1-down.png');
-    img_player[5] = loadImage('../Assets/roman1-left.png');
-    img_player[2] = loadImage('../Assets/roman1-up2.png');
-    img_player[4] = loadImage('../Assets/roman1-right2.png');
-    img_player[8] = loadImage('../Assets/roman1-down2.png');
-    img_player[6] = loadImage('../Assets/roman1-left2.png');
-    img_tourist1 = loadImage('../Assets/tourist1.png');
-    img_tourist2 = loadImage('../Assets/tourist2.png');
-    img_tourist3 = loadImage('../Assets/tourist3.png');
-    img_tourist4 = loadImage('../Assets/tourist4.png');
-    img_tourist5 = loadImage('../Assets/tourist5.png');
-    img_tourist6 = loadImage('../Assets/tourist6.png');
-    img_tourist7 = loadImage('../Assets/tourist7.png');
+    img_points = loadImage('Assets/points_sign.png');
+    img_obelisk =loadImage('Assets/obelisk.png');
+    img_player = loadImage('Assets/roman1-down.png');
+    img_player[1] = loadImage('Assets/roman1-up.png');
+    img_player[3] = loadImage('Assets/roman1-right.png');
+    img_player[7] = loadImage('Assets/roman1-down.png');
+    img_player[5] = loadImage('Assets/roman1-left.png');
+    img_player[2] = loadImage('Assets/roman1-up2.png');
+    img_player[4] = loadImage('Assets/roman1-right2.png');
+    img_player[8] = loadImage('Assets/roman1-down2.png');
+    img_player[6] = loadImage('Assets/roman1-left2.png');
+    img_tourist1 = loadImage('Assets/tourist1.png');
+    img_tourist2 = loadImage('Assets/tourist2.png');
+    img_tourist3 = loadImage('Assets/tourist3.png');
+    img_tourist4 = loadImage('Assets/tourist4.png');
+    img_tourist5 = loadImage('Assets/tourist5.png');
+    img_tourist6 = loadImage('Assets/tourist6.png');
+    img_tourist7 = loadImage('Assets/tourist7.png');
 
-    steps1 = loadSound('../Assets/steps2.mp3');
-    audio_cash = loadSound('../Assets/audio_cash2.mp3');
+    steps1 = loadSound('Assets/steps2.mp3');
+    audio_cash = loadSound('Assets/audio_cash2.mp3');
 }  
 
 function draw () {
