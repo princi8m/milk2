@@ -10,8 +10,8 @@ var statusAgent3 = {x:600, y:400, directionX:2, directionY: -0.5};
 var statusTourist1 = {x:835, y:80, directionX:2, directionY: 1, active: 1};
 var statusTourist2 = {x:420, y:120, directionX:2, directionY: 1, active: 1};
 var statusTourist3 = {x:810, y:240, directionX:2, directionY: 1, active: 1};
-var statusTourist4 = {x:220, y:270, directionX:2, directionY: 1, active: 1};
-var statusTourist5 = {x:420, y:120, directionX:2, directionY: 1, active: 0};
+var statusTourist4 = {x:220, y:270, directionX:2, directionY: 1, active: 0};
+var statusTourist5 = {x:720, y:120, directionX:2, directionY: 1, active: 0};
 var statusTourist6 = {x:900, y:420, directionX:2, directionY: 1, active: 0};
 var statusTourist7 = {x:260, y:90,  directionX:2, directionY: 1, active: 0};
 
