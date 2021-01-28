@@ -145,4 +145,13 @@ function milkedPlus(act)
 {
     milked=milked+1;
     statusTourist1.active=0;
+    addTourist();
+
+}
+
+function addTourist();
+{
+    if (milked===1) {
+        statusTourist4.active=1;
+    }
 }
