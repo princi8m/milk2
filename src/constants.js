@@ -14,6 +14,16 @@ var statusTourist4 = {x:220, y:270, directionX:2, directionY: 1, active: 0};
 var statusTourist5 = {x:720, y:120, directionX:2, directionY: 1, active: 0};
 var statusTourist6 = {x:900, y:420, directionX:2, directionY: 1, active: 0};
 var statusTourist7 = {x:260, y:90,  directionX:2, directionY: 1, active: 0};
+var statusTourist8 = {x:835, y:80, directionX:2, directionY: 1, active: 0};
+var statusTourist9 = {x:960, y:170, directionX:2, directionY: 1, active: 0};
+var statusTourist10 = {x:910, y:240, directionX:2, directionY: 1, active: 0};
+var statusTourist11 = {x:970, y:290, directionX:2, directionY: 1, active: 0};
+var statusTourist12 = {x:120, y:220, directionX:2, directionY: 1, active: 0};
+var statusTourist13 = {x:300, y:380, directionX:2, directionY: 1, active: 0};
+var statusTourist14 = {x:270, y:290,  directionX:2, directionY: 1, active: 0};
+var statusTourist15 = {x:286, y:740, directionX:2, directionY: 1, active: 0};
+var statusTourist16 = {x:820, y:180, directionX:2, directionY: 1, active: 0};
+
 
 
 var dirX=0;

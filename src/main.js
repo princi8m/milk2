@@ -4,6 +4,7 @@ let steps1;
 function setup ()
 {   
     bg = loadImage('Assets/piazza2.jpg');
+    bgWin = loadImage('../Assets/win-sign1.png');
     createCanvas(1200, 600);
     img_agent1 = loadImage('Assets/police1.png');
     img_agent2 = loadImage('Assets/police2.png');
@@ -27,6 +28,7 @@ function setup ()
     img_player[4] = loadImage('Assets/roman1-right2.png');
     img_player[8] = loadImage('Assets/roman1-down2.png');
     img_player[6] = loadImage('Assets/roman1-left2.png');
+
     img_tourist1 = loadImage('Assets/tourist1.png');
     img_tourist2 = loadImage('Assets/tourist2.png');
     img_tourist3 = loadImage('Assets/tourist3.png');
@@ -34,6 +36,16 @@ function setup ()
     img_tourist5 = loadImage('Assets/tourist5.png');
     img_tourist6 = loadImage('Assets/tourist6.png');
     img_tourist7 = loadImage('Assets/tourist7.png');
+    img_tourist8 = loadImage('Assets/tourist8.png');
+    img_tourist9 = loadImage('Assets/tourist9.png');
+    img_tourist10 =loadImage('Assets/tourist10.png');
+    img_tourist11 =loadImage('Assets/tourist11.png');
+    img_tourist12= loadImage('Assets/tourist12.png');
+    img_tourist13= loadImage('Assets/tourist13.png');
+    img_tourist14= loadImage('Assets/tourist14.png');
+    img_tourist15 =loadImage('Assets/tourist15.png');
+    img_tourist16= loadImage('Assets/tourist16.png');
+  
 
     steps1 = loadSound('Assets/steps2.mp3');
     audio_cash = loadSound('Assets/audio_cash2.mp3');
@@ -55,6 +67,14 @@ function draw () {
         tourist5();
         tourist6();
         tourist7();
+        tourist10();
+        tourist11();
+        tourist12();
+        tourist13();
+        tourist14();
+        tourist15();
+        tourist16();
+    
 
         image(img_obelisk, 567, 80);
         image(img_points, 300, 550);
@@ -84,6 +104,9 @@ function draw () {
     else if (gameStatus=="lost") {
         image(img_0lives, 250, 150)
               }
+    else if (gameStatus=="win") {
+        background(img_intro1);
+                      }  
 }
 
 
@@ -158,41 +181,83 @@ function milkedPlus(actT)
 {
     milked=milked+1;
     cashSound();
-    console.log(actT);
-    
+    console.log("actT",actT);
  
-    switch (actT) {
-        
+    switch (actT) {  
 
         case 1:
           statusTourist1.active=0;
-       
           break;
+
         case 2:
           statusTourist2.active=0;
           break;
+
         case 3:
           statusTourist3.active=0;   
-            break;
+           break;
+
         case 4:
           statusTourist4.active=0;
             break;
+
         case 5:
           statusTourist5.active=0;
-          break;
+            break;
+
         case 6:
           statusTourist6.active=0;
-          break;
+            break;
+
         case 7:
           statusTourist7.active=0;
+            break;
+
+        case 8:
+            statusTourist8.active=0; 
+            break; 
+
+        case 9:
+            statusTourist9.active=0;
+            break;
+
+        case 10:
+            statusTourist10.active=0;
+            break;
+
+        case 11:
+          statusTourist11.active=0;
           break;
-            
+
+        case 12:
+          statusTourist12.active=0;
+          break;
+
+        case 13:
+          statusTourist13.active=0;   
+           break;
+
+        case 14:
+
+          statusTourist14.active=0;
+            gameStatus="win";
+            console.log("ww");
+            break;
+
+        case 15:s
+            if (milked>11) {gameStatus="win"}
+         // statusTourist15.active=0;
+          break;
+
+
       }
+
       addTourist();
 }
 
 function addTourist()
 {
+    console.log(milked)
     switch (milked) {
           case 1:
           statusTourist4.active=1;
@@ -209,6 +274,43 @@ function addTourist()
           case 4:
           statusTourist7.active=1;
           break;
-       
+
+          case 5:
+          statusTourist8.active=1;
+          break;
+  
+          case 6:
+          statusTourist9.active=1;
+          break;
+  
+          case 7:
+          statusTourist10.active=1;
+          break;
+  
+          case 8:
+          statusTourist11.active=1;
+          break;
+
+          case 9:
+          statusTourist12.active=1;
+          break;
+  
+          case 10:
+          statusTourist13.active=1;
+          break;
+  
+          case 11:
+          statusTourist14.active=1;
+          break;
+  
+          case 12:
+          statusTourist15.active=1;
+          break;
+  
+          case 13:
+          statusTourist16.active=1;
+          break;
+    
+
       }
 }
