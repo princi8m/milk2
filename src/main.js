@@ -48,6 +48,7 @@ function draw () {
         tourist1();
         tourist2();
         tourist3();
+        tourist4();
         image(img_obelisk, 567, 80);
         image(img_points, 300, 550);
         textSize(32);
@@ -144,12 +145,11 @@ function livesMinus()
 function milkedPlus(act)
 {
     milked=milked+1;
-    statusTourist1.active=0;
+    act.active=0;
     addTourist();
-
 }
 
-function addTourist();
+function addTourist()
 {
     if (milked===1) {
         statusTourist4.active=1;

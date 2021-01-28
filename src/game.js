@@ -178,7 +178,7 @@ function tourist1()
   if (statusTourist1.active===1)
       {
       image(img_tourist1, statusTourist1.x, statusTourist1.y);
-      if (((Math.abs(playerX-30-statusTourist1.x))<40) && ((Math.abs(playerY+40-statusTourist1.y))<50)){milkedPlus(1)}
+      if (((Math.abs(playerX-30-statusTourist1.x))<40) && ((Math.abs(playerY+40-statusTourist1.y))<50)){milkedPlus("statusTourist1")}
       }
 }
 
@@ -187,6 +187,7 @@ function tourist2()
   if (statusTourist2.active===1)
       {
       image(img_tourist2, statusTourist2.x, statusTourist2.y);
+      if (((Math.abs(playerX-30-statusTourist2.x))<40) && ((Math.abs(playerY+40-statusTourist2.y))<50)){milkedPlus("statusTourist2")}
       }
 }
 
@@ -195,6 +196,14 @@ function tourist3()
   if (statusTourist3.active===1)
       {
       image(img_tourist3, statusTourist3.x, statusTourist3.y);
+      }
+}
+
+function tourist4()
+{
+  if (statusTourist4.active===1)
+      {
+      image(img_tourist4, statusTourist3.x, statusTourist4.y);
       }
 }
 
