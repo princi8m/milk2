@@ -32,6 +32,9 @@ var playerSpeed=5;
 var dir_anim=1;
 
 
+var gameLives=3;
+
+
 
 //function setupGrid(){
 const cGrid = [];
