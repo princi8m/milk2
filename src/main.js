@@ -4,7 +4,7 @@ let steps1;
 function setup ()
 {   
     bg = loadImage('Assets/piazza2.jpg');
-    bgWin = loadImage('../Assets/win-sign1.png');
+    bgWin = loadImage('../Assets/victory_scrren.jpg');
     createCanvas(1200, 600);
     img_agent1 = loadImage('Assets/police1.png');
     img_agent2 = loadImage('Assets/police2.png');
@@ -72,8 +72,7 @@ function draw () {
         tourist12();
         tourist13();
         tourist14();
-        tourist15();
-        tourist16();
+        
     
 
         image(img_obelisk, 567, 80);
@@ -105,7 +104,7 @@ function draw () {
         image(img_0lives, 250, 150)
               }
     else if (gameStatus=="win") {
-        background(img_intro1);
+        background(bgWin);
                       }  
 }
 
@@ -238,18 +237,14 @@ function milkedPlus(actT)
            break;
 
         case 14:
-
           statusTourist14.active=0;
             gameStatus="win";
-            console.log("ww");
             break;
 
-        case 15:s
+        case 15:
             if (milked>11) {gameStatus="win"}
          // statusTourist15.active=0;
           break;
-
-
       }
 
       addTourist();

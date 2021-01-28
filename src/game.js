@@ -58,10 +58,7 @@ function keys1(){
 }
 
 function checkSquare(){
-    // if ( cGrid[floor(playerX/50)][floor(playerY/50)] === 1 ) {
-    //         return 0;
-    //     } else {return 1;}
-    //console.log((cGrid[floor(playerX/50)-1][floor(playerY/50)-1]));
+    
     return cGrid[Math.round(playerX2/50)][Math.round(playerY2/50)+1];
     }
 
@@ -83,12 +80,7 @@ function checkSquare(){
       }
 
     
-    //   function bkSound() {
-    //     if (bkmusic1.isPlaying()) {
-    //     } else {
-    //       bkmusic1.play();
-    //     }
-    //   }
+  
 
     function drawGrid (){
         for (let i = 0; i < 24; i ++ )
@@ -232,7 +224,6 @@ function tourist5()
 
 function tourist6()
 {
- // console.log("a6");
   if (statusTourist6.active===1)
       {
       image(img_tourist6, statusTourist6.x, statusTourist6.y);
@@ -243,7 +234,6 @@ function tourist6()
 
 function tourist7()
 {
- // console.log("a7");
   if (statusTourist7.active===1)
       {
       image(img_tourist7, statusTourist7.x, statusTourist7.y);
@@ -264,7 +254,6 @@ function tourist8()
 
 function tourist9()
 {
- // console.log("a7");
   if (statusTourist9.active===1)
       {
       image(img_tourist9, statusTourist9.x, statusTourist9.y);
@@ -275,7 +264,6 @@ function tourist9()
 
 function tourist10()
 {
- // console.log("a7");
   if (statusTourist10.active===1)
       {
       image(img_tourist10, statusTourist10.x, statusTourist10.y);
@@ -286,7 +274,6 @@ function tourist10()
 
 function tourist11()
 {
- // console.log("a7");
   if (statusTourist11.active===1)
       {
       image(img_tourist11, statusTourist11.x, statusTourist11.y);
@@ -297,7 +284,6 @@ function tourist11()
 
 function tourist12()
 {
- // console.log("a7");
   if (statusTourist12.active===1)
       {
       image(img_tourist12, statusTourist12.x, statusTourist12.y);
@@ -308,7 +294,6 @@ function tourist12()
 
 function tourist13()
 {
- // console.log("a7");
   if (statusTourist13.active===1)
       {
       image(img_tourist13, statusTourist13.x, statusTourist13.y);
@@ -319,7 +304,6 @@ function tourist13()
 
 function tourist14()
 {
- // console.log("a7");
   if (statusTourist14.active===1)
       {
       image(img_tourist14, statusTourist14.x, statusTourist14.y);
@@ -328,25 +312,25 @@ function tourist14()
 }
 
 
-function tourist15()
-{
- // console.log("a7");
-  if (statusTourist15.active===1)
-      {
-      image(img_tourist15, statusTourist15.x, statusTourist15.y);
-      if (((Math.abs(playerX-30-statusTourist15.x))<40) && ((Math.abs(playerY+40-statusTourist15.y))<50)){milkedPlus(15)}
-      }
-}
+// function tourist15()
+// {
+//  // console.log("a7");
+//   if (statusTourist15.active===1)
+//       {
+//       image(img_tourist15, statusTourist15.x, statusTourist15.y);
+//       if (((Math.abs(playerX-30-statusTourist15.x))<40) && ((Math.abs(playerY+40-statusTourist15.y))<50)){milkedPlus(15)}
+//       }
+// }
 
 
-function tourist16()
-{
- // console.log("a7");
-  if (statusTourist16.active===1)
-      {
-      image(img_tourist16, statusTourist16.x, statusTourist16.y);
-      if (((Math.abs(playerX-30-statusTourist16.x))<40) && ((Math.abs(playerY+40-statusTourist16.y))<50)){milkedPlus(16)}
-      }
-}
+// function tourist16()
+// {
+//  // console.log("a7");
+//   if (statusTourist16.active===1)
+//       {
+//       image(img_tourist16, statusTourist16.x, statusTourist16.y);
+//       if (((Math.abs(playerX-30-statusTourist16.x))<40) && ((Math.abs(playerY+40-statusTourist16.y))<50)){milkedPlus(16)}
+//       }
+// }
 
 
