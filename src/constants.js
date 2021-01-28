@@ -1,4 +1,4 @@
-var gameStatus = "start1";
+var gameStatus = "title";
 var playerX = 600;
 var playerY = 80;
 var milked=0;
@@ -7,13 +7,13 @@ var statusAgent1 = {x:100, y:150, directionX:2, directionY: 1};
 var statusAgent2 = {x:900, y:250, directionX:3, directionY: -1};
 var statusAgent3 = {x:600, y:400, directionX:2, directionY: -0.5};
 
-var statusTourist1 = {x:220, y:220, directionX:2, directionY: 1, active: 1};
+var statusTourist1 = {x:835, y:80, directionX:2, directionY: 1, active: 1};
 var statusTourist2 = {x:420, y:120, directionX:2, directionY: 1, active: 1};
-var statusTourist3 = {x:900, y:420, directionX:2, directionY: 1, active: 1};
-var statusTourist4 = {x:220, y:220, directionX:2, directionY: 1, active: 0};
+var statusTourist3 = {x:810, y:240, directionX:2, directionY: 1, active: 1};
+var statusTourist4 = {x:220, y:270, directionX:2, directionY: 1, active: 1};
 var statusTourist5 = {x:420, y:120, directionX:2, directionY: 1, active: 0};
 var statusTourist6 = {x:900, y:420, directionX:2, directionY: 1, active: 0};
-var statusTourist7 = {x:220, y:220, directionX:2, directionY: 1, active: 0};
+var statusTourist7 = {x:260, y:90,  directionX:2, directionY: 1, active: 0};
 
 
 var dirX=0;

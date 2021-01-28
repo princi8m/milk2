@@ -9,6 +9,7 @@ function setup ()
     img_agent2 = loadImage('../Assets/police2.png');
     img_agent3 = loadImage('../Assets/police3.png');
     img_agent4 = loadImage('../Assets/police4.png');
+    img_title = loadImage('../Assets/img_title.jpg');
     img_intro1 = loadImage('../Assets/intro_screen1.jpg');
     img_intro2 = loadImage('../Assets/intro_screen2.jpg');
     img_2lives = loadImage('../Assets/caught_police_1.jpg');
@@ -35,7 +36,8 @@ function setup ()
     img_tourist7 = loadImage('../Assets/tourist7.png');
 
     steps1 = loadSound('/Assets/steps2.mp3');
-}
+    audio_cash = loadSound('/Assets/cash_sound_effect.mp3');
+}  
 
 function draw () {
     if (gameStatus=="play")  {
@@ -45,10 +47,15 @@ function draw () {
         agent1();
         agent2();
         agent3();
+
         tourist1();
         tourist2();
         tourist3();
         tourist4();
+        tourist5();
+        tourist6();
+        tourist7();
+
         image(img_obelisk, 567, 80);
         image(img_points, 300, 550);
         textSize(32);
@@ -58,6 +65,10 @@ function draw () {
    // drawGrid();
             } 
      // screens
+
+     else if (gameStatus=="title") {
+        background(img_title);  
+        } 
     else if (gameStatus=="start1") {
         background(img_intro1);  
         } 
@@ -87,8 +98,9 @@ function player ()
 
 function mouseClicked()
 {
-    console.log( ((Math.abs(playerX-statusAgent1.x))), ((Math.abs(playerY+40-statusAgent1.y)) ) );
+  //  console.log( ((Math.abs(playerX-statusAgent1.x))), ((Math.abs(playerY+40-statusAgent1.y)) ) );
         if (gameStatus=="start1") {gameStatus="start2"}
+        else if (gameStatus=="title") {gameStatus="start1"}
         else if (gameStatus=="start2") {gameStatus="play"}
         else if (gameStatus=="wait1") {
             statusAgent1.x=100;
@@ -142,16 +154,57 @@ function livesMinus()
     }
 };
 
-function milkedPlus(act)
+function milkedPlus(actT)
 {
     milked=milked+1;
-    act.active=0;
-    addTourist();
+    cashSound();
+    console.log(actT);
+    
+ 
+    switch (actT) {
+        
+
+        case 1:
+          statusTourist1.active=0;
+       
+          break;
+        case 2:
+          statusTourist2.active=0;
+          break;
+        case 3:
+          statusTourist3.active=0;   
+            break;
+        case 4:
+          statusTourist4.active=0;
+            break;
+        case 5:
+          statusTourist5.active=0;
+          break;
+        case 6:
+          statusTourist6.active=0;
+          break;
+        case 7:
+          statusTourist7.active=0;
+            
+            
+      }
+      addTourist();
 }
 
 function addTourist()
 {
-    if (milked===1) {
-        statusTourist4.active=1;
-    }
+    switch (milked) {
+          case 1:
+          statusTourist4.active=1;
+          break;
+          case 2:
+          statusTourist5.active=1;
+          break;
+          case 3:
+          statusTourist6.active=1;
+          case 4:
+          statusTourist7.active=1;
+        break;
+       
+      }
 }

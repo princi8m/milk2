@@ -7,9 +7,10 @@ function keys1(){
         dirX=-playerSpeed;
         dirY=0;
         playerX2=playerX+dirX;
+
         if (checkSquare()===0) {
             playerX=playerX2;
-            console.log( );
+          //  console.log( );
             dir_anim=(Math.floor(playerX/40%2));
             stepsSound();
             }
@@ -73,6 +74,15 @@ function checkSquare(){
         }
       }
 
+      function cashSound() {
+        if (audio_cash.isPlaying()) {
+           audio_cash.stop();
+        } else {
+          audio_cash.play();
+        }
+      }
+
+    
     //   function bkSound() {
     //     if (bkmusic1.isPlaying()) {
     //     } else {
@@ -178,7 +188,7 @@ function tourist1()
   if (statusTourist1.active===1)
       {
       image(img_tourist1, statusTourist1.x, statusTourist1.y);
-      if (((Math.abs(playerX-30-statusTourist1.x))<40) && ((Math.abs(playerY+40-statusTourist1.y))<50)){milkedPlus("statusTourist1")}
+      if (((Math.abs(playerX-30-statusTourist1.x))<40) && ((Math.abs(playerY+40-statusTourist1.y))<50)){milkedPlus(1)}
       }
 }
 
@@ -187,7 +197,7 @@ function tourist2()
   if (statusTourist2.active===1)
       {
       image(img_tourist2, statusTourist2.x, statusTourist2.y);
-      if (((Math.abs(playerX-30-statusTourist2.x))<40) && ((Math.abs(playerY+40-statusTourist2.y))<50)){milkedPlus("statusTourist2")}
+      if (((Math.abs(playerX-30-statusTourist2.x))<40) && ((Math.abs(playerY+40-statusTourist2.y))<50)){milkedPlus(2)}
       }
 }
 
@@ -196,14 +206,48 @@ function tourist3()
   if (statusTourist3.active===1)
       {
       image(img_tourist3, statusTourist3.x, statusTourist3.y);
+      if (((Math.abs(playerX-30-statusTourist3.x))<40) && ((Math.abs(playerY+40-statusTourist3.y))<50)){milkedPlus(3)}
       }
 }
 
 function tourist4()
 {
+ // console.log("a4");
   if (statusTourist4.active===1)
       {
-      image(img_tourist4, statusTourist3.x, statusTourist4.y);
+      image(img_tourist4, statusTourist4.x, statusTourist4.y);
+      if (((Math.abs(playerX-30-statusTourist4.x))<40) && ((Math.abs(playerY+40-statusTourist4.y))<50)){milkedPlus(4)}
+      }
+}
+
+function tourist5()
+{
+ // console.log("a5");
+  if (statusTourist5.active===1)
+      {
+      image(img_tourist5, statusTourist5.x, statusTourist5.y);
+      if (((Math.abs(playerX-30-statusTourist5.x))<40) && ((Math.abs(playerY+40-statusTourist5.y))<50)){milkedPlus(5)}
+      }
+}
+
+function tourist6()
+{
+ // console.log("a6");
+  if (statusTourist6.active===1)
+      {
+      image(img_tourist6, statusTourist6.x, statusTourist6.y);
+      if (((Math.abs(playerX-30-statusTourist6.x))<40) && ((Math.abs(playerY+40-statusTourist6.y))<50)){milkedPlus(6)}
+      }
+}
+
+
+function tourist7()
+{
+ // console.log("a7");
+  if (statusTourist7.active===1)
+      {
+      image(img_tourist7, statusTourist7.x, statusTourist7.y);
+      if (((Math.abs(playerX-30-statusTourist7.x))<40) && ((Math.abs(playerY+40-statusTourist7.y))<50)){milkedPlus(7)}
       }
 }
 
