@@ -1,29 +1,20 @@
 var gameStatus = "start1";
-var playerX = 800;
-var playerY = 300;
+var playerX = 600;
+var playerY = 80;
+var milked=0;
 
-var agent1X = 0;
-var agent1Y = 0
 var statusAgent1 = {x:100, y:150, directionX:2, directionY: 1};
-
-
-var agent2X = 900;
-var agent2Y = 150;
-var statusAgent2 = {x:850, y:250, directionX:3, directionY: -1};
-
-
-var agent3X = 600;
-var agent3Y = 400;
+var statusAgent2 = {x:900, y:250, directionX:3, directionY: -1};
 var statusAgent3 = {x:600, y:400, directionX:2, directionY: -0.5};
 
-var tourist1X = 220;
-var tourist1Y = 220;
+var statusTourist1 = {x:220, y:220, directionX:2, directionY: 1, active: 1};
+var statusTourist2 = {x:420, y:120, directionX:2, directionY: 1, active: 1};
+var statusTourist3 = {x:900, y:420, directionX:2, directionY: 1, active: 1};
+var statusTourist4 = {x:220, y:220, directionX:2, directionY: 1, active: 0};
+var statusTourist5 = {x:420, y:120, directionX:2, directionY: 1, active: 0};
+var statusTourist6 = {x:900, y:420, directionX:2, directionY: 1, active: 0};
+var statusTourist7 = {x:220, y:220, directionX:2, directionY: 1, active: 0};
 
-var tourist2X = 420;
-var tourist2Y = 120;
-
-var tourist3X = 900;
-var tourist3Y = 420;
 
 var dirX=0;
 var dirY=0;
@@ -31,9 +22,9 @@ var dir_player=2;
 var playerSpeed=5;
 var dir_anim=1;
 
+messageSign="";
 
 var gameLives=3;
-
 
 
 //function setupGrid(){
