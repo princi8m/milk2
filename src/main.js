@@ -156,7 +156,7 @@ function mouseClicked()
             playerX = 600;
             playerY = 80;
             gameLives=3;
-            gameStatus="play";
+          // gameStatus="play";
             
         }
 }
