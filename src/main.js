@@ -4,7 +4,7 @@ let steps1;
 function setup ()
 {   
     bg = loadImage('Assets/piazza2.jpg');
-    bgWin = loadImage('../Assets/victory_scrren.jpg');
+    bgWin = loadImage('Assets/victory_scrren.jpg');
     createCanvas(1200, 600);
     img_agent1 = loadImage('Assets/police1.png');
     img_agent2 = loadImage('Assets/police2.png');
@@ -79,7 +79,7 @@ function draw () {
         image(img_points, 300, 550);
         textSize(32);
         textFont('Georgia');
-        text("TRIES: "+gameLives+"       MILKED: "+milked+" / XII", 430, 592);
+        text("VITAE: "+gameLives+"       MILKED: "+milked+" /XII", 430, 592);
          
    // drawGrid();
             } 
@@ -105,6 +105,11 @@ function draw () {
               }
     else if (gameStatus=="win") {
         background(bgWin);
+        image(img_points, 300, 550);
+        textSize(32);
+        textFont('Georgia');
+        text("TRIES: "+gameLives+"       MILKED: "+milked+" /XII", 430, 592);
+         
                       }  
 }
 
@@ -230,10 +235,12 @@ function milkedPlus(actT)
 
         case 12:
           statusTourist12.active=0;
+        
           break;
 
         case 13:
-          statusTourist13.active=0;   
+          statusTourist13.active=0; 
+          
            break;
 
         case 14:
@@ -242,7 +249,7 @@ function milkedPlus(actT)
             break;
 
         case 15:
-            if (milked>11) {gameStatus="win"}
+           gameStatus="win";
          // statusTourist15.active=0;
           break;
       }
@@ -298,13 +305,13 @@ function addTourist()
           statusTourist14.active=1;
           break;
   
-          case 12:
-          statusTourist15.active=1;
-          break;
+        //   case 12:
+        //   statusTourist15.active=1;
+        //   break;
   
-          case 13:
-          statusTourist16.active=1;
-          break;
+        //   case 13:
+        //   statusTourist16.active=1;
+        //   break;
     
 
       }
